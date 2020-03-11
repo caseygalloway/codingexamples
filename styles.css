@@ -1,0 +1,116 @@
+/*center body*/
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #FFF7F7;
+}
+
+
+/*Header and Nav Bar*/
+nav {
+	text-align: center;
+	margin: 0 auto;
+	display: table;
+	max-width: 1200px;
+}
+
+nav h1 {
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	font-style: italic;
+	font-size: 45px;
+	text-shadow: 4px 3px 5px #F7A3F9;
+}
+
+nav ul li{
+	background-color: #E5B0F3;
+	display: inline;
+	float: left;
+	list-style: none;
+	position: relative;
+	font-size: 21px;
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+	font-family: "Arial Narrow", sans-serif;
+	text-shadow: 4px 3px 5px grey;
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+
+nav ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: none;
+}
+
+nav ul li:hover {
+	background-color: #f3f3f3;
+}
+
+nav ul li:hover > ul, ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+
+nav ul li ul li a:hover{
+	background-color: #f3f3f3;
+	padding: 0px 0px 0px 0px;
+}
+
+.dropdown {
+	padding: 0px 0px 0px 0px;
+}
+
+/*Welcome Page*/
+.welcomeimage {
+	border-radius: 50%;
+	float: right;
+}
+
+article {
+	margin: 40px 50px;
+}
+
+section {
+	margin: auto;
+}
+
+h4 {
+	text-align: center;
+}
+
+/*Slideshow*/
+
+.slideshow {
+	margin: 30px auto;
+	max-width: 475px;
+	border-style: groove;
+	border-width: 10px;
+	border-color: #F3FFE1;
+}
+
+.display-container {
+	position: relative;
+}
+
+.animate-fading{
+	animation: fading 7s infinite;
+	}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+
+/*Text Formatting*/
+p {
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 30px;
+}

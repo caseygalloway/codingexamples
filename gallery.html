@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<link rel=stylesheet href="styles.css"/>
+	<style>
+		.mySlides {
+			display: none;
+			}
+		img {
+			max-width: 475px;
+			}
+	</style>
+</header>
+<body>
+	<nav>
+		<h1>Kyle & Melissa's Wedding</h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="theirstory.html">Their Story</a></li>
+			<li><a href="bridalparty.html">Bridal Party</a></li>
+			<li>Day of 
+				<ul class="dropdown">
+					<li><a href="ceremony.html">Ceremony</a></li>
+					<li><a href="reception.html">Reception</a></li>
+				</ul>
+			</li>
+			<li><a href="registeries.html">Registeries</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="rsvp.html">RSVP</a></li>
+		</ul>
+	</nav>
+	<div class="slideshow display-container">
+		<img class="mySlides animate-fading" src="images/gallery1.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery2.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery3.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery4.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery6.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery7.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery8.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery9.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery10.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery11.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery12.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery13.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery14.jpg"/>
+		<img class="mySlides animate-fading" src="images/gallery15.jpg"/>
+	</div>
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel,7000); // Change image every 2 seconds
+		}
+	</script>

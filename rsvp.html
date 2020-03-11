@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<link rel=stylesheet href="styles.css"/>
+	<style>
+		form {
+			font-family: "Arial", sans-serif;
+			font-size: 22px;
+			}
+		h2 {
+			font-family: "Arial Narrow", sans-serif;
+			margin: 30px 0px;
+			text-shadow: 4px 3px 5px #F7A3F9;
+			}
+		img {
+			width: 300px;
+			border-radius: 25%;
+			}
+	</style>
+</header>
+<body>
+	<nav>
+		<h1>Kyle & Melissa's Wedding</h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="theirstory.html">Their Story</a></li>
+			<li><a href="bridalparty.html">Bridal Party</a></li>
+			<li>Day of 
+				<ul class="dropdown">
+					<li><a href="ceremony.html">Ceremony</a></li>
+					<li><a href="reception.html">Reception</a></li>
+				</ul>
+			</li>
+			<li><a href="registeries.html">Registeries</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="rsvp.html">RSVP</a></li>
+		</ul>
+	</nav>
+	<section style="max-width: 550px; margin: 30px auto;">
+	<table>
+	<caption style="float: left;"><h2 style="font-size: 26px;"><b><em>RSVP</em></b></h2></caption>
+		<tr>
+		<td>
+			<form>
+				Name:<br/>
+				<input type="text" name="firstname"/><br/><br/>
+				Attending:<br/>
+				<select name="attendance">
+					<option value="blank"></option>
+					<option value="attending">Attending</option>
+					<option value="notattending">Not Attending</option>
+				</select><br/><br/>
+				Number of people attending:<br/>
+				<input type="text" name="numberattending"/><br/><br/>
+				<input type="Submit" style="width: 100px; color: black; font-size: 18px;"/>
+			</form>
+			</section>
+		</td>
+		<td>
+			<img src="images/rsvp flower.jpg" alt="Flower"/>
+		</td>
+		</tr>
+	</table>
+	</section>
+</body>
+</html>
